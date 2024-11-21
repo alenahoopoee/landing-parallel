@@ -1,0 +1,98 @@
+.benefits {
+    display: flex;
+    flex-direction: column;
+    padding-block: 150px;
+    row-gap: 90px;
+
+    &__header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    &__form {
+        display: flex;
+        column-gap: 65px;
+    }
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 56px;
+        color: var(--color-white);
+    }
+
+    &__input {
+        width: 20vw;
+        height: var(--input-height);
+        padding-left: 20px;
+        padding-right: 58px;
+        border: var(--border);
+        border-radius: 99px;
+        background-color: var(--color-accent);
+
+        &-container {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                content: ""; /* Необходимо для отображения псевдоэлемента */
+                position: absolute; /* Абсолютное позиционирование */
+                border: 2px solid rgba(0, 0, 0, 0.16);
+                width: 2px;
+                height: 32px;
+                bottom: 7px;
+                right: 40px;
+                pointer-events: none;
+            }
+        }
+
+        &-icon {
+            position: absolute; /* Абсолютное позиционирование */
+            bottom: 11px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: #f1ff5a;
+        }
+    }
+
+    &__button {
+        width: 15vw;
+        background-color: var(--color-accent);
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+
+        @include hover {
+            background-color: #f1ff5a;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 33%;
+        
+        &-title {
+            padding-top: 15px;
+            color: var(--color-white);
+            font-size: 24px;
+            line-height: 83%
+        }
+
+        &-description {
+            padding-top: 35px;
+            color: var(--color-white);
+            line-height: 150%;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@mixin fluid-text($max: 48, $min: 16) {
+    font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px); // для расчета шрифта во vw
+}
+@mixin reset-link {
+    color: inherit; // ссылка в цвет родителя
+
+    &,
+    &:hover {
+        text-decoration: none; // в статике и при наведении не было подчеркивания
+    }
+}
+@mixin reset-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+@mixin flex-center($isInline: false) {
+    @if $isInline { // если isInline = true, то
+        display: inline-flex;
+    } @else { // в ином случае
+        display: flex;
+    }
+// для центрирования по обеим осям
+    justify-content: center;
+    align-items: center;
+}
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+@mixin square($size) {
+    width: $size;
+    aspect-ratio: 1;
+}

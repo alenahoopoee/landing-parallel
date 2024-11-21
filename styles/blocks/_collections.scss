@@ -1,0 +1,15 @@
+.collections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    padding-block: 130px;
+
+    &__list {
+        --gridColumns: 3;
+    }
+
+    &__item {
+        border: var(--border-big);
+        border-radius: 15px 15px 0 0;
+    }
+}

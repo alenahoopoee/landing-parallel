@@ -1,0 +1,68 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    padding-block: 120px;
+    row-gap: 56px;
+
+    &__title {
+        text-align: center;
+        font-family: var(--font-family-alt);
+        color: var(--color-white);
+        font-size: 45px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__accordion {
+        --indicatorRotate: -90deg;
+
+        background-color: var(--color-brown);
+        color: var(--color-white);
+        padding: 35px;
+
+        
+        
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+       
+
+        &-title {
+            font-size: 21px;
+
+        }
+
+        &-body {
+            padding-top: 16px;
+            font-size: 18px;
+            color: #b0b0b0;
+        }
+
+        &[open] {
+            --indicatorRotate: 0deg;
+            
+        }
+
+        &-indicator {
+            rotate: var(--indicatorRotate);
+            transition-duration: var(--transition-duration);
+
+            @include hover {
+                opacity: 0.7;
+            }
+            
+            // &:active {
+            //     --indicatorRotate: 0deg;
+            //     transition-duration: var(--transitiion-duration);
+            // }
+     
+        }
+     }
+}

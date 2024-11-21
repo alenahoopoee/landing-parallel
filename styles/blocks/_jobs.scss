@@ -1,0 +1,31 @@
+.jobs {
+    display: flex;
+    flex-direction: column;
+    padding-block: 130px;
+    row-gap: 57px;
+
+    &:nth-child(2) {
+        padding-top: 0px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family:  "Roboto", sans-serif;
+
+
+        &-link {
+            display: flex;
+            column-gap: 20px;
+
+            &-text {
+                font-size: 18px;
+            }
+
+            @include hover {
+                opacity: 0.7;
+            }    
+        }
+    }
+}

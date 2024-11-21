@@ -1,0 +1,61 @@
+.header {
+   background-color: var(--color-black); 
+
+   &__inner {
+      height: 3.75vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   
+
+   &__menu {
+      color: var(--color-white);
+      
+      &-list {
+         display: flex;
+         column-gap: 50px;
+      }
+
+      &-link {
+         @include hover {
+            opacity: 0.7;
+         }
+      }
+   }
+
+   &__button-group {
+      display: flex;
+      column-gap: 30px;
+      
+   }
+
+   &__button-transparent {
+      font-size: 13px;
+      background-color: transparent;
+      color: var(--color-white);
+      border: none;
+
+      @include hover {
+         opacity: 0.7;
+      }
+   }
+
+   &__button-with-shadow {
+      width: 10vw;
+      height: var(--button-height-small);
+      font-size: 14px;
+      color: var(--color-white);
+      background-color: transparent;
+      border: 1px solid var(--color-white);
+      border-radius: var(--border-radius-small);
+      box-shadow: 3px 3px 0 0 var(--color-gray);
+
+      @include hover {
+         color: var(--color-black);
+         background-color: var(--color-white);
+         border: 1px solid var(--color-black);
+      }
+   }
+}

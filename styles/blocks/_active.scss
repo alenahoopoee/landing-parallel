@@ -1,0 +1,9 @@
+.active {
+    border: var(--border);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow);
+
+    &__counter {
+        background-color: var(--color-accent);
+    }
+}

@@ -1,0 +1,25 @@
+.section{
+    &__notebook-bg {
+        background-image: url('/images/hero/bg.png');
+        height: calc(100vh - 3.75vw);
+        background-size: cover; /* Масштабирование с сохранением пропорций */
+        background-position: center; /* Центрирование изображения */
+        background-repeat: no-repeat; 
+    }
+
+    &__bg-black {
+        background-color: var(--color-black);
+    }
+
+    &__jobs-bg {   
+        background-color: var(--color-beige);
+    }
+
+    &__join-bg {
+        background-image: url('/images/join-bg.png');
+        height: 80vh;
+        background-size: cover; /* Масштабирование с сохранением пропорций */
+        background-position: center; /* Центрирование изображения */
+        background-repeat: no-repeat; 
+    }
+}

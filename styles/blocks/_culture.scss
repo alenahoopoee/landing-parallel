@@ -1,0 +1,23 @@
+.culture {
+    &__list {
+        display: flex;
+        padding-top: 60px;
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 45px;
+    }
+
+    &__link {
+        border: var(--border);
+        border-radius: 10px;
+        padding: 17px 35px;
+        font-size: 28px;
+        line-height: 171%;
+        color: var(--color-black-alt);
+
+        @include hover {
+            background-color: var(--color-black-alt);
+            color: var(--color-white);
+        }
+    }
+}

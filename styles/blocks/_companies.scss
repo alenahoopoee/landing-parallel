@@ -1,0 +1,33 @@
+.companies {
+    &__item {
+        padding: 0px;
+    }
+
+    &__header {
+        position: relative;
+        overflow: hidden;
+
+        &-logo {
+            position: absolute;
+            left: 20px;
+            bottom: -25px;
+        }
+    }
+
+    &__main {
+        padding: 35px 25px 25px;
+    }
+
+
+    &__positions {
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        font-size: 14px;
+        column-gap: 10px;
+    }
+
+    &__address {
+        padding-top: 10px;
+    }
+}
